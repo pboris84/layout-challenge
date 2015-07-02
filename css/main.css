@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic);
+
+/* Boris Pavlov #0841034 
+INFO 343 Challenge 2 Dawg Pizza
+Instructor: Michael Freeman, sum2015
+Style Guide: http://www.w3schools.com/html/html5_syntax.asp */
+body {
+  font-family: 'Lato';
+  font-size: 18px;
+  font-weight: 300;
+  background-image: url('../img/background.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} 
+
+/* Links Style */
+a:link, a:visited {color: #0000AA; text-decoration: none;}
+a:hover, input:focus {color: #0000EE;}
+
+/* Headings Style */
+#h1id, h2, h3 {font-family: 'Raleway'; font-weight: 300;}
+/* Note to grader: couldn't get the font size to adjust correctly in h1 for
+ some reason so just went with an id selector and it seemed to work, sorry 
+ for the hacky workaround */
+#h1id {font-size: 300%; margin: 0 0 0 0;}
+h2, h3 {color: #505050;}
+h2 {font-size: 150%; margin: 0 0 0 0;}
+h3 {font-size: 125%;}
+
+/* Main Style */
+main { 
+  margin: 20px 20px 20px 30%;
+  background-image: url('../img/ricepaper_v3.png');
+  opacity: 0.9;
+}
+
+/* Header Style */
+header {
+  padding: 1em 1em 1em 1em;
+  background-color: #FA5A0F;
+  border-bottom: 5px solid #EA4A00;
+  color: #FFFFFF;	
+}
+#HungryHuskies { 
+  font-size: 120%;
+  color: #EEEEEE;   
+  margin: 0 0 0 0;
+}
+
+/* Gen Info Style */
+#GenInfo {padding: 1em 1em 1em 1em;}
+
+/* Menu Style */
+#Menu { 
+  padding: 1em 1em 1em 1em;
+  background: rgba(207, 205, 140, 0.5); 
+}
+dt {font-weight: 400;}
+dd {
+  font-size: 80%;
+  font-style: italic;
+  margin-left: 1em; 
+  margin-bottom: 1em;
+}
+		
+/* About Us Style */
+#AboutUs { padding: 1em 1em 1em 1em;}
+
+/* Footer Style */
+footer { 
+  padding: 1em 1em 1em 1em;
+  background-color: #FC892F;
+  border-top: 5px solid #EC791F;
+  font-size: 80%;
+  text-align: right;
+}
+
+
