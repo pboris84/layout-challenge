@@ -1,7 +1,7 @@
 layout-challenge
 ================
 
-My server:
+My server: http://students.washington.edu/borisp/info343/layout-challenge/
 
 Boris Pavlov #0841034 
 INFO 343 Challenge 3 Bootstrap
