@@ -2,20 +2,81 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300italic);
 
 /* Boris Pavlov #0841034 
-INFO 343 Challenge 2 Dawg Pizza
+INFO 343 Challenge 3 Bootstrap
 Instructor: Michael Freeman, sum2015
 Style Guide: http://www.w3schools.com/html/html5_syntax.asp */
-body {
-  font-family: 'Lato';
-  font-size: 18px;
-  font-weight: 300;
-  background-image: url('../img/background.jpg');
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+@media screen and (min-width: 992px) {   
+  body {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 300;
+    background-image: url('../img/background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .container-fluid { 
+    padding-right: 0;
+    padding-left: 0;
+    margin: 20px 20px 20px 30%; 
+    background-image: url('../img/ricepaper_v3.png');
+    opacity: 0.9;
+  }
+
+  /*Note to Grader: given px position didnt line up with screenshot
+  So I played with it till it lined up on my machine*/
+  nav {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+  }
+  header {
+    padding: 1em 1em 1em 1em;
+    background-color: #FA5A0F;
+    border-bottom: 5px solid #EA4A00;
+    color: #FFFFFF;
+  }
+  #HungryHuskies { 
+    font-size: 120%;
+    color: #EEEEEE;   
+    margin: 0 0 0 0;
+  }
 } 
 
-/* Links Style */
+/*Small Screen Modifications*/
+@media screen and (max-width: 991px) {
+  body {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .container-fluid { 
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 0 0 0;
+    background-image: url('../img/ricepaper_v3.png');
+    opacity: 0.9;
+  }
+  header {
+    padding: 1em 1em 1em 1em;
+    background-color: #FA5A0F;
+    border-bottom: 5px solid #EA4A00;
+    color: #FFFFFF; 
+  }
+  #HungryHuskies {display: none;}
+}
+
+/*Navigation Links Style*/
+nav ul {padding: 0 0 0 0; margin: 0 0 0 0;}
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 1em;
+}
+#navlink {color: #55E;}
+#navlink:hover, #navlink:focus {color: #00E;}
+
+/* Other Links Style */
 a:link, a:visited {color: #0000AA; text-decoration: none;}
 a:hover, input:focus {color: #0000EE;}
 
@@ -29,31 +90,9 @@ h2, h3 {color: #505050;}
 h2 {font-size: 150%; margin: 0 0 0 0;}
 h3 {font-size: 125%;}
 
-/* Main Style */
-main { 
-  margin: 20px 20px 20px 30%;
-  background-image: url('../img/ricepaper_v3.png');
-  opacity: 0.9;
-}
-
-/* Header Style */
-header {
-  padding: 1em 1em 1em 1em;
-  background-color: #FA5A0F;
-  border-bottom: 5px solid #EA4A00;
-  color: #FFFFFF;	
-}
-#HungryHuskies { 
-  font-size: 120%;
-  color: #EEEEEE;   
-  margin: 0 0 0 0;
-}
-
-/* Gen Info Style */
+/* Rest of Main style */
 #GenInfo {padding: 1em 1em 1em 1em;}
-
-/* Menu Style */
-#Menu { 
+#menu { 
   padding: 1em 1em 1em 1em;
   background: rgba(207, 205, 140, 0.5); 
 }
@@ -64,11 +103,7 @@ dd {
   margin-left: 1em; 
   margin-bottom: 1em;
 }
-		
-/* About Us Style */
-#AboutUs { padding: 1em 1em 1em 1em;}
-
-/* Footer Style */
+#about {padding: 1em 1em 1em 1em;}
 footer { 
   padding: 1em 1em 1em 1em;
   background-color: #FC892F;
